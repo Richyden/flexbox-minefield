@@ -1,0 +1,44 @@
+main{
+}
+
+.ligne1, .ligne2, .ligne3, .ligne4, .ligne5, .ligne6, .ligne7, .ligne8{
+	display: flex;
+}
+
+div{
+	height: 46px;
+	width: 46px;
+
+	background-color: #CBCBCB;
+
+	border: 1px dashed black;
+}
+
+
+/*   NUMBER ONE   */
+
+.l1_c1, .l1_c3, .l1_c5, .l1_c7, .l2_c5, .l2_c6, .l2_c7, .l3_c1, .l3_c3, .l4_c3,
+.l5_c2, .l5_c4, .l5_c5, .l5_c7, .l5_c8{
+	background-image: url("images/one.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+
+/*   NUMBER TWO   */
+
+.l2_c1, .l2_c2, .l2_c3, .l4_c1, .l4_c2, .l5_c6, .l6_c1, .l6_c6{
+	background-image: url("images/two.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+/*   NUMBER THREE   */
+
+.l6_c2, .l6_c3, .l6_c4, .l7_c6{
+	background-image: url("images/three.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
