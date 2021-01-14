@@ -14,6 +14,11 @@ div{
 	border: 1px dashed black;
 }
 
+.game{
+	width: 368px;
+	border: 5px solid #CACACA;
+}
+
 
 /*   NUMBER ONE   */
 
@@ -41,4 +46,23 @@ div{
 	background-image: url("images/three.png");
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+
+/*   BOMBS   */
+
+.l1_c2, .l1_c6, .l3_c2, .l5_c1, .l6_c5, .l6_c7, .l7_c2, .l7_c3,
+.l7_c4, .l8_c6{
+	background-image: url("images/mine.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+/*   NONE    */
+
+.l7_c1, .l7_c5, .l7_c7, .l7_c8, .l8_c1, .l8_c2, .l8_c3, .l8_c4,
+.l8_c5, .l8_c7, .l8_c8{
+	background-image: url("images/none.png");
+	border-right: 1px solid black;
 }
