@@ -9,3 +9,5 @@ In bonus, I added some "hover".
 It's a project for my fromation in "BeCode.be".
 
 ## Link
+
+https://richyden.github.io/flexbox-minefield/
