@@ -1,7 +1,11 @@
 main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.ligne1, .ligne2, .ligne3, .ligne4, .ligne5, .ligne6, .ligne7, .ligne8{
+
+article{
 	display: flex;
 }
 
@@ -16,11 +20,14 @@ div{
 
 .game{
 	width: 368px;
-	border: 5px solid #CACACA;
+	border-top: 10px solid #919191;
+	border-left: 10px solid #CACACA;
+	border-right: 10px solid #FDFEFD;
+	border-bottom: 10px solid #CECBCE;
 }
 
 
-/*   NUMBER ONE   */
+/* --------------------------------  NUMBER ONE  ------------------------ */
 
 .l1_c1, .l1_c3, .l1_c5, .l1_c7, .l2_c5, .l2_c6, .l2_c7, .l3_c1, .l3_c3, .l4_c3,
 .l5_c2, .l5_c4, .l5_c5, .l5_c7, .l5_c8{
@@ -31,7 +38,7 @@ div{
 
 
 
-/*   NUMBER TWO   */
+/* -------------------  NUMBER TWO ---------------------------------  */
 
 .l2_c1, .l2_c2, .l2_c3, .l4_c1, .l4_c2, .l5_c6, .l6_c1, .l6_c6{
 	background-image: url("images/two.png");
@@ -40,7 +47,7 @@ div{
 }
 
 
-/*   NUMBER THREE   */
+/* ------------------------------  NUMBER THREE  ------------------------------- */
 
 .l6_c2, .l6_c3, .l6_c4, .l7_c6{
 	background-image: url("images/three.png");
@@ -49,7 +56,7 @@ div{
 }
 
 
-/*   BOMBS   */
+/* ---------------------------------  BOMBS  -------------------------- */
 
 .l1_c2, .l1_c6, .l3_c2, .l5_c1, .l6_c5, .l6_c7, .l7_c2, .l7_c3,
 .l7_c4, .l8_c6{
@@ -59,10 +66,38 @@ div{
 }
 
 
-/*   NONE    */
+/*  --------------------------- NONE  ----------------------------------  */
 
-.l7_c1, .l7_c5, .l7_c7, .l7_c8, .l8_c1, .l8_c2, .l8_c3, .l8_c4,
+.l6_c8, .l7_c1, .l7_c5, .l7_c7, .l7_c8, .l8_c1, .l8_c2, .l8_c3, .l8_c4,
 .l8_c5, .l8_c7, .l8_c8{
 	background-image: url("images/none.png");
-	border-right: 1px solid black;
+	background-size: 46px 46px;
+}
+
+
+/* ------------------ HOVER -------------------------- */
+
+
+/* ------------------- HOVER ONE  ---------------- */
+
+.l6_c8:hover, .l7_c1:hover, .l8_c1:hover{
+	background-image: url("images/one.png");
+}
+
+/* ----------------------  HOVER TWO  -------------------- */
+
+.l7_c8:hover, .l8_c2:hover, .l8_c4:hover, .l8_c5:hover, .l8_c7:hover{
+	background-image: url("images/two.png");
+}
+
+/* ------------------- HOVER THREE ------------------ */
+
+.l7_c5:hover, .l7_c7:hover, .l8_c3:hover{
+	background-image: url("images/three.png");
+}
+
+/* --------------------- HOVER BOMB  --------------- */
+
+.l8_c8:hover{
+	background-image: url("images/mine.png");
 }
